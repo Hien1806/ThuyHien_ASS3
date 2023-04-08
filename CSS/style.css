@@ -1,0 +1,452 @@
+
+
+#nav-bar {
+    text-align: center;
+}
+/*3 dòng là tối đa*/
+/*
+.text_truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+} */
+/* Thiết lập vị trí text và banner */
+#h-banner {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    /*opacity: 1; */
+}
+#h-banner img {
+    filter: brightness(0.5);
+}
+#h-banner h1 {
+    position: absolute;
+    top:6%;
+    left:35%;
+    color: white;
+}
+#h-banner span {
+    position: absolute;
+    bottom:-40%;
+    right:29%;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    opacity: 0.9;
+}
+/* thiết lập vị trí giữa navbar và ảnh avatar bo tròn */
+.h-relative-avatar {
+    position: relative;
+}
+.avatar {
+    position: absolute;
+    bottom:-10%;
+    left: 45%;
+    border-radius: 50%;
+    border: white 5px solid;
+}
+/* cho icon màu xanh */
+.icon-user,.icon-doc-text-inv, .icon-mail-alt, .icon-star-1{
+    color: blue;
+}
+.item {
+    margin-left: 50px;
+}
+.item1 {
+    margin-top: -30px;
+    line-height: 0.5;
+}
+/* bỏ gạch dưới thẻ a */
+.h-navbar a {
+    text-decoration: none !important;
+}
+/* Phần thông tin */
+#about .about-col1 { /* thiết lập màu nền cho hai cột khác nhau */
+    background-color: #f5f5f5;
+}
+#about .about-col2 { /* thiết lập màu nền cho hai cột khác nhau */
+    background-color: #f0f0f0;
+}
+#about h1 {
+    font-size: 21px;
+}
+#about i {
+    margin-right : 10px;
+    color: #047aed;
+}
+
+/* Phần thông tin */
+/* Tạo boder bao quanh cho các phần thông tin */
+#information .h-col {
+    border: gray solid 1px;
+    padding: 20px;
+}
+/* ban đầu dùng grid nhưng sau chuyển sang flex
+#information .row {
+    gap: 10px;
+} */
+/* Thiết lập khoảng cách giữa icon và các từ : kinh nghiệm, học vấn ... */
+#information .main-icon {
+    position: relative;
+    left: 40px;
+    color: blue;
+    font-size: 30px;
+}
+/* Thiết lập grid cho 4 phần của phần sở thích */
+
+.hobby-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+.hobby1-item p {
+    font-size: 12px;
+}
+
+/* bỏ phần gạch chân thẻ a */
+#information a{
+    text-decoration: none;
+}
+/* thiết lập khi hold chuột vào mới hiện border bottom */
+.lang ul li a:hover,.skill ul li a:hover{
+    border-bottom: solid blue 1px;
+}
+
+
+.list-style, p {
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+}
+/* Phần chứng chỉ */
+/* Cho phông chữ nhỏ chút */
+#h-certificate .cert-item h6{
+    font-size: 12px;
+}
+#h-certificate .cert-item p{
+    font-size: 12px;
+}
+.cert-item .margin-0{
+    margin: 0;
+}
+#h-certificate .row {
+    background-color:#f7f7f7;
+}
+
+
+/* Phần dự án */
+.name-project {
+    border-right: solid 1px #E2E2E2;
+}
+
+table, td {
+    border: #E2E2E2 1px solid;
+   /* border-collapse: collapse; */
+}
+
+td {
+    height: 50px;
+}
+tr {
+    border-bottom: #E2E2E2 1px solid!important;
+}
+
+/*
+  tr:last-child {
+      border-bottom: none!important; */
+  }
+  table {
+      border-bottom: none;
+  }
+#h-project .name-project {
+    height: 70px;
+    background-color: #A49EB1;
+    align-items: center; /* cách căn text ở  giữa theo chiều dọc */
+    display: flex;
+}
+.icon-project {
+    height: 60px;
+    background-color: #FFD18D;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border: #E2E2E2 1px solid;
+}
+button {
+    padding:0 2px;
+    border-bottom-left-radius: 35%!important;
+    border-top-left-radius: 35%!important;
+    border-top-right-radius: 35%!important;
+    border-bottom-right-radius: 35%!important;
+    background-color: #047aed;
+    color: white;
+    border-color: blue;
+
+}
+/* Phần footer */
+ #h-footer .container {
+   background-color: #f7f7f7;
+}
+#footer1 {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    color: black;
+
+}
+#footer1 i {
+    background-color: #047aed ;
+    color: white;
+    border-radius: 50%;
+}
+
+
+/* Mobile */
+@media( max-width: 500px) {
+    #h-banner {
+        padding: 0 16px!important; /* thiết lập padding trái phải để  hình ảnh cách màn hình 1 khoảng, k để full */
+    }
+    #h-banner h1 {
+        position: absolute;
+        top:6%;
+        left:35%;
+        color: white;
+        font-size: 18px;
+    }
+    #h-banner span {
+        position: absolute;
+        bottom:-70%;
+        right:26%;
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .h-navbar div.d-md-flex { /* Căn lại vị trí của navbar bằng cách điều chỉnh padding */
+        padding: 0!important;
+    }
+    .h-navbar div.d-md-flex > div {  /* Tăng khoảng  cách giữa các phàn tủ navbar bằng cách  điều chỉnh margin bottom */
+        margin-bottom: 10px;
+    }
+
+    .avatar {
+        display: none; /* Với kích thươ mobile thì k hiện avatar bo tròn */
+    }
+    /*.h-non-display {
+        display: none;
+    } */
+    #about .row { /* thiết lập padding trái phải để  phần about cách màn hình 1 khoảng, k để full, thẳng hàng với hình ảnh */
+        padding: 0 16px!important;
+    }
+    /* Thiết lập border phần certificate theo mẫu trên mobile */
+    #h-certificate .h-border-1px {
+        border-bottom: #d6c08d solid 1px!important;
+    }
+    #h-certificate .col-md{
+        border-bottom: #d6c08d solid 1px!important;
+    }
+    #h-certificate .h-border-1px-md-lg {
+        border-bottom: none!important;
+
+    }
+    /* hình ảnh phần cert cho 100% với kích thước mobile: phần này k cần nữa vì đã đặt class img-fluid trong thẻ <img>
+
+    #h-certificate img {
+        max-width: 100%!important;
+        height: auto!important;
+    } */
+    #h-certificate .cert-item h6 { /* phần chữ CHỨNG CHỈ*/
+        font-size: 16px!important;
+    }
+    #h-certificate .cert-item p { /* phần chữ CHỨNG CHỈ*/
+        font-size: 14px!important;
+    }
+    /*
+    .my-sm-5 {
+        margin-top: 10px;
+    } */
+
+    .about-col2 i { /* Chỉnh phần icon phần about lớn hơn một chút */
+      font-size: 20px;
+        margin: 0 20px;
+    }
+    #information .h-col span  {
+        font-size: 21.843px!important;
+    }
+    .cert-item h4,  .cert-item h6, .cert-item p {
+        font-size: 24px;
+    }
+    #information .h-lg {
+        display: none;
+    }
+    .hobby-container {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #h-footer span {
+        display: none;
+    }
+    #h-project .name-project {
+        background-color: white!important;
+        font-weight: bold;
+    }
+}
+
+
+@media( min-width: 768px) {
+    #h-banner h1 {
+        position: absolute;
+        top:6%;
+        left:35%;
+        color: white;
+        font-size: 22px;
+    }
+    #h-banner span {
+        position: absolute;
+        bottom:-70%;
+        right:20%;
+        font-size: 11px;
+        font-weight: bold;
+        color: white;
+
+    }
+    #information .flex-col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #information .flex-row {
+        display: flex;
+    }
+    .hobby1-item p {
+        font-size: 12px;
+    }
+
+    #information .h-lg {
+        display: none;
+    }
+
+    .h-border-1px-md-lg {
+        border-top: solid 1px #d6c08d;
+        margin-top: 10px;
+    }
+
+   /* .cert-item img {
+        width: 300px;
+    } */
+
+   /* #h-project {
+        font-size: 14px;
+    }*/
+
+    #h-project span {
+        font-size: 12px;
+    }
+
+    #h-project .noneborder1 {
+        width: 40%;
+    }
+
+    #information .h-col {
+        margin-left: 15px;
+    }
+     #information .padding-left-15{
+         padding-left: 15px!important;
+     }
+    .h-border-1px {
+        border-right: #d6c08d solid 1px;
+    }
+    .h-border-top {
+        border-top: #d6c08d solid 1px;
+    }
+    .width50 {
+        width: 100%;
+    }
+    .width-50-md {
+        width: 50%;
+    }
+
+}
+@media( min-width: 992px) {
+    #h-banner h1 {
+        position: absolute;
+        top:6%;
+        left:35%;
+        color: white;
+        font-size: 30px;
+    }
+    #h-banner span {
+        position: absolute;
+        bottom:-55%;
+        right:20%;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+    }
+    #information .h-md div { /* them div sau #information .h-md để có ưu tiên cao hơn #information .flex-row: display flex */
+        display: none
+    }
+
+
+    #information .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #information .flex-row {
+        display: flex;
+    }
+
+    #information .h-col {
+        margin-left: 15px;
+    }
+
+    #information .padding-left-15 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .hobby p {
+        font-size: 14px;
+    }
+
+    .h-border-1px-md-lg {
+        border-top: 0;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .h-border-top {
+        border-top: none;
+    }
+
+    /* .cert-item img {
+        width: 300px;
+
+    } */
+    #h-project span {
+        font-size: 14px;
+    }
+
+    .width50 {
+        width: 50%;
+    }
+}
+    /*
+    #information .h-md {  cùng hạng bậc với #information .flex-row {
+        display: flex; tuy nhiên code nào viết sau sẽ được ưu tiên hơn ;
+    }
+        display: none;
+    }
+} */
+
+
+
+
+
